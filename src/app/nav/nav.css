@@ -1,0 +1,39 @@
+nav {
+    padding: 25px 20px;
+    background: #4271cb;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-container input {
+    padding: 8px 12px 8px 35px;
+    border-radius: 1.2rem;
+    border: none;
+    font-size: 16px;
+}
+
+.search-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    pointer-events: none;
+}

@@ -1,0 +1,19 @@
+/* Layout container: sidebar + content side by side */
+.main-layout {
+  display: flex;
+  height: calc(100vh - 80px); /* adjust if nav is 80px tall */
+}
+
+/* Sidebar stays fixed width */
+app-sidebar {
+  width: 250px; /* matches your sidebar CSS */
+  flex-shrink: 0; /* prevent shrinking */
+}
+
+/* Main content fills remaining space */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #e6f0ff; /* optional light background */
+  overflow-y: auto; /* scroll if content is tall */
+}
