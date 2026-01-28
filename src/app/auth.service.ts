@@ -8,6 +8,11 @@ export interface RegisterRequest {
   password: string;
 }
 
+export interface LoginRequest {
+  email: string;
+  password: string;
+}
+
 @Injectable({
   providedIn: 'root',
 })
@@ -16,8 +21,13 @@ export class AuthService {
 
   constructor(private http: HttpClient) {}
 
+  // Register new user
   register(payload: RegisterRequest): Observable<any> {
     return this.http.post(`${this.baseUrl}/register`, payload);
   }
-}
 
+  // Login user
+  login(payload: LoginRequest): Observable<any> {
+    return this.http.post(`${this.baseUrl}/login`, payload);
+  }
+}

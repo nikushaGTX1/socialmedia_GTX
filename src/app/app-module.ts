@@ -9,7 +9,7 @@ import { Nav } from './nav/nav';
 import { Sidebar } from './sidebar/sidebar';
 import { Register } from './register/register';
 import { Main } from './main/main';
-import { Login } from './login/login';
+import { LoginComponent } from './login/login';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { Login } from './login/login';
     Sidebar,
     Register,
     Main,
-    Login
+    LoginComponent
   ],
   imports: [
     BrowserModule,
